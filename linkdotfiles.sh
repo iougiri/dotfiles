@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASEDIR=$(pwd)
+
 DOTFILES=(
 	.bashrc
 	.profile
