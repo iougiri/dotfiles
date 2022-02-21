@@ -4,9 +4,11 @@ BASEDIR=$(pwd)
 
 DOTFILES=(
 	.bashrc
+	.p10k.zsh
 	.profile
 	.tmux.conf
 	.vimrc
+	.zshrc
 )
 
 function linkDotfile {
