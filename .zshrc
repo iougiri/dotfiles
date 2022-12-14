@@ -57,5 +57,16 @@ setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
 setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
 setopt EXTENDED_HISTORY  # record command start time
 
+alias ls="ls --color=auto"
+
+# Make fzf faster by using ripgrep
+export FZF_DEFAULT_COMMAND='rg --files --hidden' # if using rg. Options include "--hidden --follow --glob --type". See help with `rg -
+export FZF_DEFAULT_OPTS="--border --inline-info 
+  --preview-window=:hidden
+  --preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+  --bind '?:toggle-preview' 
+"
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
