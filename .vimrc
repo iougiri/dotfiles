@@ -67,6 +67,8 @@ let g:goyo_height = '100%'
 let g:goyo_margin_top = 1
 let g:goyo_margin_bottom = 1
 
+let mapleader = ","
+
 nnoremap <Leader>g :Goyo<CR>
 nnoremap <Leader>l :LanguageToolCheck<CR>
 nnoremap <Leader>L :LanguageToolClear<CR>
