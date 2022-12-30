@@ -2,6 +2,16 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set nu
 set rnu
+set clipboard+=unnamedplus
+set scrolloff=9
+
+if exists('$TMUX')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+else
+  set termguicolors
+endif
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

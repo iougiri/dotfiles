@@ -9,6 +9,7 @@ DOTFILES=(
 	.tmux.conf
 	.vimrc
 	.zshrc
+	.config/nvim/init.vim
 )
 
 function linkDotfile {
@@ -34,6 +35,9 @@ function linkDotfile {
   echo "Creating new symlink: ${dest}"
   ln -s ${BASEDIR}/${1} ${dest}
 }
+
+# Make sure .config directory exists
+mkdir -p "${HOME}/.config/nvim"
 
 # Install Packages
 cd $BASEDIR
