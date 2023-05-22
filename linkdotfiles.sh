@@ -10,6 +10,7 @@ DOTFILES=(
 	.vimrc
 	.zshrc
 	.config/nvim/init.vim
+	.config/alacritty
 )
 
 function linkDotfile {
