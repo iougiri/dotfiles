@@ -28,6 +28,7 @@ export PATH=${PATH}:~/bin:~/.local/bin:~/etc/scripts
 
 # I'd quite like for Go to work please.
 export PATH=${PATH}:/usr/local/go/bin:${HOME}/go/bin
+export GOPATH=/usr/local/go
 
 # Colours have names too. Stolen from Arch wiki
 txtblk='\[\e[0;30m\]' # Black - Regular
