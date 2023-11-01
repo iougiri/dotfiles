@@ -4,6 +4,7 @@ BASEDIR=$(pwd)
 
 DOTFILES=(
 	.bashrc
+	.gf
 	.p10k.zsh
 	.profile
 	.tmux.conf
